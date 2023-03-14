@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'img/icons8-medium-monogram.svg'%}">
+    <link rel="stylesheet" href="{% static 'css/estilo.css'%}">
+    <title>MangaList</title>
+</head>
+
+<body>
+
+    <nav>
+        <img onmouseenter="mostra()" src="{% static 'img/icons8-medium-monogram.svg'%}" >
+        <h2>anga</h2>
+       <a href=""><div class="botaoForm">botao</div></a>
+    </nav>
+    <div class="conteiner">
+        <div class="box">
+            {%for card in cards%}
+            <dov class="card">
+                <img src="{{ card.imagem }}" alt="{{card.titolo}}" class="imagem">
+                <div class="blocoDeTexto">
+                    <h3>{{ card.titolo }}</h3>
+                    <p>{{ card.descricao }}</p>
+                </div>
+            </dov>
+            {% endfor %}
+           
+            <dov class="card">
+                <img src="{{ card.imagem }}" alt="{{card.titolo}}" class="imagem">
+                <div class="blocoDeTexto">
+                    <h3>{{ card.titolo }}</h3>
+                    <p>{{ card.descricao }}</p>
+                </div>
+            </dov>
+            <dov class="card">
+                <img src="{{ card.imagem }}" alt="{{card.titolo}}" class="imagem">
+                <div class="blocoDeTexto">
+                    <h3>{{ card.titolo }}</h3>
+                    <p>{{ card.descricao }}</p>
+                </div>
+            </dov>
+            <dov class="card">
+                <img src="{{ card.imagem }}" alt="{{card.titolo}}" class="imagem">
+                <div class="blocoDeTexto">
+                    <h3>{{ card.titolo }}</h3>
+                    <p>{{ card.descricao }}</p>
+                </div>
+            </dov>
+            <dov class="card">
+                <img src="{{ card.imagem }}" alt="{{card.titolo}}" class="imagem">
+                <div class="blocoDeTexto">
+                    <h3>{{ card.titolo }}</h3>
+                    <p>{{ card.descricao }}</p>
+                </div>
+            </dov>
+            <dov class="card">
+                <img src="{{ card.imagem }}" alt="{{card.titolo}}" class="imagem">
+                <div class="blocoDeTexto">
+                    <h3>{{ card.titolo }}</h3>
+                    <p>{{ card.descricao }}</p>
+                </div>
+            </dov>
+            <dov class="card">
+                <img src="{{ card.imagem }}" alt="{{card.titolo}}" class="imagem">
+                <div class="blocoDeTexto">
+                    <h3>{{ card.titolo }}</h3>
+                    <p>{{ card.descricao }}</p>
+                </div>
+            </dov>
+            <dov class="card">
+                <img src="{{ card.imagem }}" alt="{{card.titolo}}" class="imagem">
+                <div class="blocoDeTexto">
+                    <h3>{{ card.titolo }}</h3>
+                    <p>{{ card.descricao }}</p>
+                </div>
+            </dov>
+        </div>
+    </div>
+</body>
+
+</html>
